@@ -1,0 +1,21 @@
+
+
+
+# Ignore everything by default
+*
+
+# But keep these files and folders
+!main.py
+!face recognition.py
+!simple_facerec.py
+!frontend templates/
+!frontend templates/indexs.html
+!frontend templates/script.js
+!frontend templates/style.css
+
+# Ignore Python cache and environment
+__pycache__/
+*.pyc
+.env
+images/
+example.py

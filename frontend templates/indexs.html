@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPE Detection Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="sidebar">
+      <h2>PPE Detection</h2>
+
+      <label for="confidence">Confidence Threshold:</label>
+      <input type="range" id="confidence" min="0" max="1" step="0.1" value="0.5">
+      <span id="confidenceValue">0.5</span>
+
+      <button id="startBtn" class="start">Start Streaming</button>
+      <button id="stopBtn" class="stop">Stop Streaming</button>
+
+      <label for="classes">Select Classes:</label>
+      <select id="classes" multiple>
+        <option>No Vest</option>
+        <option>Safety Vest</option>
+        <option>No Helmet</option>
+        <option>Helmet</option>
+        <option>Gloves</option>
+        <option>No Gloves</option>
+        <option>Goggles</option>
+        <option>No Goggles</option>
+        <option>Shoes</option>
+      </select>
+
+      <button id="setClassesBtn" class="set">Set Classes to Detect</button>
+      <button id="viewLogBtn" class="log">View Logs</button>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="video-container">
+      <img id="videoStream" src="" alt="Video Stream">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
